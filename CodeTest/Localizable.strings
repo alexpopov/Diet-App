@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  CodeTest
+
+  Created by Alex Popov II on 2014-03-02.
+  Copyright (c) 2014 Alex Popov II. All rights reserved.
+*/
+
+"SELECT FOOD INFO" = "SELECT fd_id, f.a_fd_nme, fg.fd_grp_nme FROM food f LEFT JOIN food_groups fg ON f.fd_grp_id = fg.fd_grp_id";
+
+
+"SELECT FOOD LIST" = "select f.fd_id, f.a_fd_nme, fg.fd_grp_nme from food f left join food_groups fg on f.fd_grp_id = fg.fd_grp_id where f.fd_grp_id = '%@' ORDER BY f.a_fd_nme";
+
+"SELECT FOOD DETAILS" = "select nn.nt_nme, na.nt_value, nn.unit from food f left join nutrient_amount_small na on f.fd_id = na.fd_id left join nutrient_name nn on na.nt_id = nn.nt_id where f.fd_id = '%@' order by na.nt_value desc";
